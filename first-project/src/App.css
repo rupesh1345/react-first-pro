@@ -1,0 +1,119 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  width: 100%;
+  max-width: 400px; /* Reduced max width for a more compact form */
+  margin: 0 auto;
+}
+
+.form-container {
+  background: #ffffff; /* White background for form */
+  padding: 30px; /* Reduced padding for a compact design */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s; /* Smooth scale on hover */
+}
+
+.form-container:hover {
+  transform: scale(1.02); /* Slightly scale up on hover for effect */
+}
+
+h2 {
+  margin-bottom: 20px; /* Adjusted margin for header */
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px; /* Reduced margin between input fields */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px; /* Reduced padding for a more compact feel */
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #74ebd5; /* Change border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(116, 235, 213, 0.5); /* Soft shadow effect */
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+  height: 80px; /* Set height for textarea to reduce overall size */
+}
+
+.character-count {
+  font-size: 12px;
+  color: #999999; /* Light gray for character count */
+  text-align: right;
+}
+
+button {
+  padding: 10px; /* Adjusted padding for buttons */
+  background-color: #74ebd5; /* Gradient background */
+  background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold; /* Make button text bold */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for button effects */
+}
+
+button:hover {
+  background-color: #62d3b3; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:disabled {
+  background-color: #aaa; /* Gray out button when disabled */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.error-text {
+  color: #ff6961; /* Red for error messages */
+  font-size: 14px;
+  margin-bottom: 10px; /* Reduced margin for error messages */
+}
+
+.success-message {
+  text-align: center;
+}
+
+.success-message h2 {
+  color: #28a745; /* Green for success messages */
+}
+
+.success-message p {
+  margin-bottom: 15px; /* Adjusted margin for success messages */
+  font-size: 16px;
+}
